@@ -48,7 +48,7 @@ async function fetchStockData() {
     try {
         const stockData = await Promise.all(tickersArr.map(async (ticker) => {
             //const url = `https://api.polygon.io/v2/aggs/ticker/${ticker}/range/1/day/${dates.startDate}/${dates.endDate}?apiKey=${process.env.POLYGON_API_KEY}`
-            const url = `${import.meta.env.VITE_POLYGON_WORKER}/?ticker=${ticker}&startDate=${dates.startDate}&endDate=${dates.endDate}`
+            const url = `https://polygon-worker.hijamie.com/?ticker=${ticker}&startDate=${dates.startDate}&endDate=${dates.endDate}`
             const response = await fetch(url)
 
             if (!response.ok) {
@@ -84,7 +84,7 @@ async function fetchReport(data) {
     ]
     
     try {
-        const url = import.meta.env.VITE_OPENAI_WORKER
+        const url = openai-worker.hijamie.com
         
         const response = await fetch(url, {
             method: 'POST',
