@@ -84,7 +84,7 @@ async function fetchReport(data) {
     ]
     
     try {
-        const url = openai-worker.hijamie.com
+        const url = "https://openai-worker.hijamie.com"
         
         const response = await fetch(url, {
             method: 'POST',
