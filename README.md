@@ -4,7 +4,7 @@ Dodgy Dave's Stock Predictions. Uses OpenAI API and Polygon API for generating d
 
 - Uses Cloudflare workers to handle API requests securely (not exposing API keys)
 - Shifts API requests from the client side to the server side
-  - Enable CORS (cross origin resource sharing)
+  - Enabled CORS (cross origin resource sharing) to prevent unauthorised use from unknown domains
 - Uses a Cloudflare AI Gateway to make the app more robust
   - Real time logs
   - Caching responses
@@ -12,4 +12,4 @@ Dodgy Dave's Stock Predictions. Uses OpenAI API and Polygon API for generating d
 - Cloudflare Pages for automated project deployments
 - Custom domains with Cloudflare
 
-Live demo [here](stocks.hijamie.com)
+Live demo [here](https://stocks.hijamie.com)
